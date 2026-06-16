@@ -1,4 +1,4 @@
-V "GNAT Lib v13"
+V "GNAT Lib v15"
 M P W=b
 P SS ZX
 
@@ -7,7 +7,7 @@ RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U main%b		main.adb		9f8745cc NE OO SU
+U main%b		main.adb		66a8e009 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -16,87 +16,86 @@ W pricing%s		pricing.adb		pricing.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
 Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
 
-D ada.ads		20240521074738 76789da1 ada%s
-D a-assert.ads		20240521074737 ba465f5c ada.assertions%s
-D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
-D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
-D a-numeri.ads		20240521074738 84bea7a3 ada.numerics%s
-D a-nubinu.ads		20240521074738 93f1f3d1 ada.numerics.big_numbers%s
-D a-nbnbig.ads		20240521074738 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
-D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
-D a-string.ads		20240521074738 90ac6797 ada.strings%s
-D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
-D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
-D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
-D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
-D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20240521074738 15f799c2 interfaces%s
-D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
-D main.adb		20260615183734 a5e6288c main%b
-D pricing.ads		20260615183112 664d0c13 pricing%s
-D system.ads		20240521074738 426dafb8 system%s
-D s-assert.ads		20240521074738 9c4520c7 system.assertions%s
-D s-casuti.ads		20240521074738 cf13d755 system.case_util%s
-D s-conca2.ads		20240521074738 b5fb73f7 system.concat_2%s
-D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
-D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
-D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
-D s-imager.ads		20240521074738 45c7157d system.image_r%s
-D s-imageu.ads		20240521074738 631c6ed0 system.image_u%s
-D s-imgflt.ads		20240521074738 d12816b5 system.img_flt%s
-D s-imguns.ads		20240521074738 7867236f system.img_uns%s
-D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
-D s-powflt.ads		20240521074738 a51ab9b8 system.powten_flt%s
-D s-putima.ads		20240521074738 17291fe4 system.put_images%s
-D s-retsta.ads		20240521074738 0f6b06cb system.return_stack%s
-D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
-D s-soflin.ads		20240521074738 df77073e system.soft_links%s
-D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
-D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
-D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
-D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
-D s-stratt.ads		20240521074738 f7dfd786 system.stream_attributes%s
-D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
-D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
-D s-valuns.ads		20240521074738 e8a1f424 system.val_uns%s
-D s-valuti.ads		20240521074738 fcd603d8 system.val_util%s
-D s-valueu.ads		20240521074738 18770347 system.value_u%s
-D s-vauspe.ads		20240521074738 a67b2f28 system.value_u_spec%s
-D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
-D s-widuns.ads		20240521074738 866a5800 system.wid_uns%s
-D s-widthu.ads		20240521074738 b32f15e2 system.width_u%s
+D ada.ads		20250419085653 76789da1 ada%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D main.adb		20260616232341 4353cefe main%b
+D pricing.ads		20260616231927 11146929 pricing%s
+D system.ads		20250419085653 70765b54 system%s
+D s-conca2.ads		20250419085653 b5fb73f7 system.concat_2%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-imager.ads		20250419085653 45c7157d system.image_r%s
+D s-imageu.ads		20250419085653 b0b50650 system.image_u%s
+D s-imgflt.ads		20250419085653 d12816b5 system.img_flt%s
+D s-imguns.ads		20250419085653 c4e23690 system.img_uns%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-powflt.ads		20250419085653 a51ab9b8 system.powten_flt%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-retsta.ads		20250419085653 0f6b06cb system.return_stack%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-stratt.ads		20250419085653 516607ae system.stream_attributes%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250419085653 f810d31c system.val_spec%s
+D s-vauspe.ads		20250419085653 89269ba5 system.value_u_spec%s
+D s-vs_uns.ads		20250419085653 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
 G a e
 G c Z b b [main standard 4 11 none]
-G r c none [main standard 4 11 none] [add pricing 12 13 none]
+G r c none [main standard 4 11 none] [add pricing 14 13 none]
 G r c none [main standard 4 11 none] [make_option pricing 8 13 none]
-G r c none [main standard 4 11 none] [fill_tab pricing 13 14 none]
-G r c none [main standard 4 11 none] [print_tab pricing 14 14 none]
+G r c none [main standard 4 11 none] [fill_tab pricing 15 14 none]
+G r c none [main standard 4 11 none] [print_tab pricing 16 14 none]
 G r c none [main standard 4 11 none] [get_strike pricing 9 13 none]
+G r c none [main standard 4 11 none] [monte_carlo pricing 12 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|1r6 1r23
-X 13 a-textio.ads
-58K13*Text_IO 787e16 17|1w10 1r27
-566U14*Put_Line 17|13s4 14s4 15s4 18s4
-X 17 main.adb
-4U11*Main 4b11 19l5 19t9
-5f4 S{float} 13r38
-6f4 K{float} 14r39
+18K9*Ada 22e8 13|1r6 1r23
+X 9 a-textio.ads
+58K13*Text_IO 785e16 13|1w10 1r27
+565U14*Put_Line 13|14s4 15s4 16s4 19s4 21s4
+X 13 main.adb
+4U11*Main 4b11 22l5 22t9
+5f4 S{float} 14r38
+6f4 K{float} 15r39
 7i4 N{integer}
 8b4 Flag{boolean}
-9f4 result{float} 15r36
-10a4 Tab{18|4A9} 16m14 16r14 17r14
-11r4 Opt{18|6R9} 18r43
-X 18 pricing.ads
-2K9*Pricing 17|2w6 2r19 9r24 18|23e12
-4A9*Int_Array(integer)<integer> 17|10r10
-6R9*Option_OOP 17|11r10 18|21e17
-8V13*Make_Option{6R9} 17|11s24
-8f25 S{float} 17|11r37
-8f27 T{float} 17|11r49
-9V13*Get_Strike{float} 17|18s47
-12V13*Add{float} 17|9s32
-12f18 A{float} 17|9r36
-12f21 B{float} 17|9r46
-13U14*Fill_Tab 17|16s4
-14U14*Print_Tab 17|17s4
+9f4 result{float} 16r36
+10a4 Tab{14|4A9} 17m14 17r14 18r14
+11r4 Opt{14|6R9} 19r43
+12f4 Call_Price{float} 20m4 21r43
+X 14 pricing.ads
+2K9*Pricing 13|2w6 2r19 9r24 20r18 14|25e12
+4A9*Int_Array(integer)<integer> 13|10r10
+6R9*Option_OOP 13|11r10 14|23e17
+8V13*Make_Option{6R9} 13|11s24
+8f25 S{float} 13|11r37
+8f27 T{float} 13|11r49
+9V13*Get_Strike{float} 13|19s47
+12V13*Monte_Carlo{float} 13|20s26
+12f25 S0{float} 13|20r38
+12f28 K{float} 13|20r51
+12f30 T{float} 13|20r62
+12f32 r{float} 13|20r72
+12f34 sigma{float} 13|20r83
+12i49 N_SIMS{integer} 13|20r97
+14V13*Add{float} 13|9s32
+14f18 A{float} 13|9r36
+14f21 B{float} 13|9r46
+15U14*Fill_Tab 13|17s4
+16U14*Print_Tab 13|18s4
 

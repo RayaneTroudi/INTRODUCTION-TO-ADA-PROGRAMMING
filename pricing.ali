@@ -1,4 +1,4 @@
-V "GNAT Lib v13"
+V "GNAT Lib v15"
 P SS ZX
 
 RN
@@ -11,14 +11,17 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_ELABORATION_CODE
 
-U pricing%b		pricing.adb		fc7e0327 OO PK
+U pricing%b		pricing.adb		fbbf9668 OO PK
 W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W random_utils%s	random_utils.adb	random_utils.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
 
-U pricing%s		pricing.ads		664d0c13 EE OO PF PK
+U pricing%s		pricing.ads		11146929 EE OO PF PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -29,92 +32,114 @@ Z system.return_stack%s	s-retsta.ads		s-retsta.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
 
-D ada.ads		20240521074738 76789da1 ada%s
-D a-assert.ads		20240521074737 ba465f5c ada.assertions%s
-D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
-D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
-D a-numeri.ads		20240521074738 84bea7a3 ada.numerics%s
-D a-nubinu.ads		20240521074738 93f1f3d1 ada.numerics.big_numbers%s
-D a-nbnbig.ads		20240521074738 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
-D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
-D a-string.ads		20240521074738 90ac6797 ada.strings%s
-D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
-D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
-D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
-D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
-D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20240521074738 15f799c2 interfaces%s
-D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
-D pricing.ads		20260615183112 664d0c13 pricing%s
-D pricing.adb		20260615183526 c61f6e67 pricing%b
-D system.ads		20240521074738 426dafb8 system%s
-D s-assert.ads		20240521074738 9c4520c7 system.assertions%s
-D s-casuti.ads		20240521074738 cf13d755 system.case_util%s
-D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
-D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
-D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
-D s-imagei.ads		20240521074738 c707dfd0 system.image_i%s
-D s-imgint.ads		20240521074738 d4a52a9b system.img_int%s
-D s-parame.ads		20251218205951 1f39ba92 system.parameters%s
-D s-putima.ads		20240521074738 17291fe4 system.put_images%s
-D s-retsta.ads		20240521074738 0f6b06cb system.return_stack%s
-D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
-D s-soflin.ads		20240521074738 df77073e system.soft_links%s
-D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
-D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
-D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
-D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
-D s-stratt.ads		20240521074738 f7dfd786 system.stream_attributes%s
-D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
-D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
-D s-valint.ads		20240521074738 1f610d7a system.val_int%s
-D s-valuns.ads		20240521074738 e8a1f424 system.val_uns%s
-D s-valuti.ads		20240521074738 fcd603d8 system.val_util%s
-D s-valuei.ads		20240521074738 11081e09 system.value_i%s
-D s-vaispe.ads		20240521074738 44130d39 system.value_i_spec%s
-D s-valueu.ads		20240521074738 18770347 system.value_u%s
-D s-vauspe.ads		20240521074738 a67b2f28 system.value_u_spec%s
-D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
-D s-widuns.ads		20240521074738 866a5800 system.wid_uns%s
-D s-widthu.ads		20240521074738 b32f15e2 system.width_u%s
+D ada.ads		20250419085653 76789da1 ada%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20250419085653 84bea7a3 ada.numerics%s
+D a-nuelfu.ads		20250419085653 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20250419085653 324808ac ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D pricing.ads		20260616231927 11146929 pricing%s
+D pricing.adb		20260616232012 c0a7212e pricing%b
+D random_utils.ads	20260616225532 1d0ba4ad random_utils%s
+D system.ads		20250419085653 70765b54 system%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250419085653 5e131ce0 system.image_i%s
+D s-imgint.ads		20250419085653 67e4edfb system.img_int%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-retsta.ads		20250419085653 0f6b06cb system.return_stack%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-stratt.ads		20250419085653 516607ae system.stream_attributes%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250419085653 f810d31c system.val_spec%s
+D s-vaispe.ads		20250419085653 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250419085653 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250419085653 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250419085653 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
 G a e
 G c Z s b [make_option pricing 8 13 none]
 G c Z s b [get_strike pricing 9 13 none]
 G c Z s b [get_maturity pricing 10 13 none]
-G c Z s b [add pricing 12 13 none]
-G c Z s b [fill_tab pricing 13 14 none]
-G c Z s b [print_tab pricing 14 14 none]
+G c Z s b [pay_off pricing 11 13 none]
+G c Z s b [monte_carlo pricing 12 13 none]
+G c Z s b [add pricing 14 13 none]
+G c Z s b [fill_tab pricing 15 14 none]
+G c Z s b [print_tab pricing 16 14 none]
 G c Z s s [int_arrayIP pricing 4 9 none]
-G c Z s s [option_oopDA pricing 18 12 none]
-G c Z s s [option_oopDF pricing 18 12 none]
-G c Z s s [option_oopIP pricing 18 12 none]
+G c Z s s [option_oopDA pricing 20 12 none]
+G c Z s s [option_oopDF pricing 20 12 none]
+G c Z s s [option_oopIP pricing 20 12 none]
+G r c none [monte_carlo pricing 12 13 none] [normal random_utils 5 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 18|1r6 1r23
-X 13 a-textio.ads
-58K13*Text_IO 787e16 18|1w10 1r27
-566U14*Put_Line 18|22s10
-X 17 pricing.ads
-2K9*Pricing 18E12 23l5 23e12 18|3b14 37l5 37t12
-4A9*Int_Array(integer)<integer> 13r37 14r31 18|11r37 19r30
-6R9*Option_OOP 8p13 8r45 9p13 9r30 10p13 10r32 18c12 21e17 18|26r31 29r33
-. 32r47
-8V13*Make_Option{6R9} 8>25 8>27 18|32b13 35l8 35t19
-8f25 S{float} 18|32b26 34r25
-8f27 T{float} 18|32b29 34r40
-9V13*Get_Strike{float} 9>24 18|26b13 27l33 27t43
-9r24 Opt{6R9} 18|26b25 27r17
-10V13*Get_Maturity{float} 10>26 18|29b13 30l35 30t47
-10r26 Opt{6R9} 18|29b27 30r17
-12V13*Add{float} 12>18 12>21 18|5b13 8l8 8t11
-12f18 A{float} 18|5b18 7r14
-12f21 B{float} 18|5b21 7r18
-13U14*Fill_Tab 13=24 18|11b14 16l8 16t16
-13a24 Tab{4A9} 18|11b24 13r16 14m10
-14U14*Print_Tab 14>25 18|19b14 24l8 24t17
-14a25 Tab{4A9} 18|19b24 21r16 22r33
-19f10*Strike{float} 18|27r21 34m15
-20f10*Maturity{float} 18|30r21 34m28
-X 18 pricing.adb
-13i11 I{integer} 14r14 14r20
-21i11 I{integer} 22r37
+18K9*Ada 22e8 17|1r6 1r23 3r6 3r45
+X 4 a-numeri.ads
+20K13*Numerics 36e17 17|3r10 3r49
+X 5 a-nuelfu.ads
+18K22*Elementary_Functions[6|39] 17|3w19 3r58
+X 6 a-ngelfu.ads
+53V13*Sqrt{float} 17|59s57[5|18]
+87V13*Exp{float} 17|59s23[5|18] 63s14[5|18]
+X 12 a-textio.ads
+58K13*Text_IO 785e16 17|1w10 1r27
+565U14*Put_Line 17|23s10
+X 16 pricing.ads
+2K9*Pricing 20E12 25l5 25e12 17|6b14 67l5 67t12
+4A9*Int_Array(integer)<integer> 15r37 16r31 17|13r37 20r30
+6R9*Option_OOP 8p13 8r45 9p13 9r30 10p13 10r32 20c12 23e17 17|28r31 34r33
+. 40r47
+8V13*Make_Option{6R9} 8>25 8>27 17|40b13 43l8 43t19
+8f25 S{float} 17|40b26 42r25
+8f27 T{float} 17|40b29 42r40
+9V13*Get_Strike{float} 9>24 17|28b13 31l8 31t18
+9r24 Opt{6R9} 17|28b25 30r14
+10V13*Get_Maturity{float} 10>26 17|34b13 37l8 37t20
+10r26 Opt{6R9} 17|34b27 36r14
+11V13*Pay_Off{float} 11>21 11>23 17|45b13 48l8 48t15 60s23
+11f21 S{float} 17|45b22 47r25 60r31
+11f23 K{float} 17|45b25 47r29 60r41
+12V13*Monte_Carlo{float} 12>25 12>28 12>30 12>32 12>34 12>49 17|50b13 65l8
+. 65t19
+12f25 S0{float} 17|50b25 59r18
+12f28 K{float} 17|50b28 60r46
+12f30 T{float} 17|50b30 59r47 59r62 63r21
+12f32 r{float} 17|50b32 59r29 63r19
+12f34 sigma{float} 17|50b34 59r37 59r51
+12i49 N_SIMS{integer} 17|50b50 57r19 63r39
+14V13*Add{float} 14>18 14>21 17|8b13 11l8 11t11
+14f18 A{float} 17|8b18 10r14
+14f21 B{float} 17|8b21 10r18
+15U14*Fill_Tab 15=24 17|13b14 18l8 18t16
+15a24 Tab{4A9} 17|13b24 15r16 16m10
+16U14*Print_Tab 16>25 17|20b14 25l8 25t17
+16a25 Tab{4A9} 17|20b24 22r16 23r33
+21f10*Strike{float} 17|30r18 42m15
+22f10*Maturity{float} 17|36r18 42m28
+X 17 pricing.adb
+15i11 I{integer} 16r14 16r20
+22i11 I{integer} 23r37
+52f7 sum{float} 60m10 60r17 63r50
+53f7 S_T{float} 59m10 60r36
+57i11 I{integer}
+X 18 random_utils.ads
+1K9*Random_Utils 17|2w6 2r24 18|7e17
+5V13*Normal{float} 17|59s65
+5f21 Mu{float} 17|59r72
+5f40 Sigma{float} 17|59r83
 
